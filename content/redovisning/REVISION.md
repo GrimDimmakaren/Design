@@ -1,5 +1,8 @@
-Min me/redovisa
+Revision history
 =============================
 
-My repo for the design course at BTH where I am learning to code with PHP.
-In this part we are learning how to improve the design of what we have learned so far.
+v1.0.0 (2018. 11. 07)
+-----------------------------
+
+* Adding readme, revision history and license
+* Adding link to my GitHub repo and to course webpage and GitHub repo
