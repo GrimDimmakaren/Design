@@ -1,0 +1,48 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: #857f89;
+@bgColorBody: white;
+@colorBody: #857f89;
+@fontFamilyBody: serif;
+@textcolor: white;
+@paintItBlack: black;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    border-left: 20px;
+    border-right: 20px;
+}
+
+body {
+    background-color: @bgColorBody;
+    font: 100.01%/1 @fontFamilyBody;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1 {
+    font-size: 2.375em;
+    line-height: 1.26315789;
+    font-weight: 400;
+    border-bottom: 1px solid #666;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+figure.figure.right {
+    float: right;
+    margin-left: 8px;
+}
+
+figure.figure.left {
+    float: left;
+    margin-right: 8px;
+}

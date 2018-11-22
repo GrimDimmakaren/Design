@@ -14,3 +14,4 @@ v1.0.0 (2018. 11. 07)
 * Adding new images and content to index, about and test page
 * Adding footer content and fixing it in CSS
 * Adding the final content to redovisning and prepare for a release
+* Adding theme done with Less for kmom02

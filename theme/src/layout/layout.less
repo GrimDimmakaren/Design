@@ -1,0 +1,316 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+.inner-wrap {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1100px;
+}
+
+.wrap-all {
+    max-width: 1100px;
+    margin: 0 auto;
+    background-color: @colorBody;
+}
+
+.site-logo-text {
+    font-size: 42px;
+    line-height: 1;
+    text-shadow: 2px -2px 2px @paintItBlack;
+    background-color: @colorBody;
+}
+
+.site-logo-text a {
+    color: @bgColorBody;
+    text-decoration: none;
+    transition: all .2s linear;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.rm-navbar {
+    text-align: center;
+    font-size: 1em;
+    line-height: 0;
+}
+
+.rm-navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.rm-desktop li {
+    background-color: @colorBody;
+}
+
+.inner-wrap-header {
+    max-width: 100%;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    width: 20%
+    float: left;
+}
+
+.region-header-col-2 {
+    width: 60%
+    float: left;
+}
+
+.outer-wrap.outer-wrap-header {
+    background-color: @bgColorBody;
+}
+
+.region-flash {
+    display: inline;
+    float: left;
+    width: 100%;
+}
+
+.inner-wrap-main {
+    padding-bottom: 20px;
+}
+
+.region-main {
+    display: inline;
+    float: left;
+    width: 73.95833333%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+    margin-left: 8.85416667%;
+
+    &.has-sidebar {
+        margin-left: 0;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 40%;
+    }
+}
+
+.region-sidebar-left, .region-sidebar-right {
+    display: inline;
+    float: left;
+    width: 28.125%;
+    margin-right: .52083333%;
+    margin-left: 10px;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 25%;
+    margin-left: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.route- .article {
+    margin-bottom: 0;
+}
+
+.author-byline {
+    border: 1px solid @paintItBlack;
+    background-color: @bgColorBody;
+    margin-bottom: 10px;
+    padding: 0.5em;
+}
+
+.author-byline p {
+    margin-top: 40px;
+    margin-bottom: 24px;
+}
+
+.author-byline::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.outer-wrap-footer {
+    background-color: @bgColorBody;
+    padding-top: 24px;
+    padding-bottom: 20px;
+}
+
+.region-footer {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+}
+
+.footer-column-wrapper {
+    color: @paintItBlack;
+    border-bottom: 1px solid @paintItBlack;
+    padding-bottom: 24px;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    display: inline;
+    float: left;
+    width: 32.29166667%;
+    margin-left: .52083333%;
+    margin-right: .52083333%;
+    background-color: @colorBody;
+}
+
+h4 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    font-weight: 400;
+    text-align: center;
+}
+
+.footer-column-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.site-footer {
+    color: @paintItBlack;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: @colorBody;
+}
+
+.footer-column p {
+    text-align: center;
+}
+
+.wrap-sidebar .block {
+    margin-bottom: 48px;
+    background-color: @bgColorBody;
+}
+
+.wrap-sidebar .block h4 {
+    border-top: 1px solid #ccc;
+    background-image: linear-gradient(to right,#fff,#ccc);
+}
+
+.toc {
+    list-style: none;
+    margin: 0;
+    margin-bottom: 0px;
+    margin-bottom: 40px;
+}
+
+.toc .selected {
+    background-color: @colorBody;
+    font-style: italic;
+}
+
+.region-breadcrumb {
+    display: inline;
+    float: left;
+    width: 98.95833333%;
+    margin-left: .520%;
+    margin-right: .52%;
+}
+
+.region-main.has-sidebar-left {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-left: .52%;
+    margin-right: .52%;
+    margin-left: 2%;
+}
+
+.breadcrumb-list, .bullet-list {
+    margin-bottom: 20px;
+    font-size: .875em;
+    line-height: 1.71428571;
+}
+
+.breadcrumb-list li a, .bullet-list li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.breadcrumb-list li, .bullet-list li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+.breadcrumb-list ul, .bullet-list ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.breadcrumb-list li::after, .bullet-list li::after {
+    content: " » ";
+}
+
+.next-previous {
+    margin-bottom: 20px;
+}
+
+.next-previous a {
+    text-decoration: none;
+}
+
+.next-previous .next {
+    float: right;
+    text-align: right;
+    padding-right: 20px;
+}
+
+.region-sidebar-right {
+    margin-left: 4.6875%;
+}
+
+.region-sidebar-right p {
+    margin-left: 8px;
+    text-align: center;
+}
+
+.region-main.has-sidebar-right {
+    display: inline;
+    float: left;
+    width: 65.625%;
+    margin-right: .52%;
+    margin-left: .52%;
+}
+
+.region-main.has-sidebar-right h1 {
+    margin-left: 20px;
+}
+
+.region-main.has-sidebar-right p {
+    margin-left: 20px;
+}
+
+.region-main.has-sidebar-right .block {
+    margin-left: 25px;
+}
+
+.wrap-sidebar .block {
+    margin-bottom: 48px;
+    background-color: @bgColorBody;
+    margin-right: 5px;
+}
