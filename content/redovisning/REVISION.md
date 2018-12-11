@@ -16,3 +16,5 @@ v1.0.0 (2018. 11. 07)
 * Adding the final content to redovisning and prepare for a release
 * Adding theme done with Less for kmom02
 * Adding redovisnings text and setting the theme as default
+* Adding vgrid and hgrid for kmom03
+* Adding redovisnings text and setting the theme as default for komo03
