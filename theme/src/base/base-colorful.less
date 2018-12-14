@@ -1,0 +1,116 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@HColor: #00ff00;
+@FColor: #008000;
+@BColor: #00c000;
+@AnalogColor1: #a99b10;
+@AnalogColor2: #adb311;
+@AnalogColor3: #699c17;
+@CompColor1: #3f004f;
+@CompColor2: #80179c;
+@TextforColor: white;
+@paintItBlack: black;
+
+
+html {
+    overflow-y: scroll;
+    background-image: linear-gradient(to right,@CompColor1,@CompColor2);
+    border-left: 20px;
+    border-right: 20px;
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    background-color: @BColor;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+image {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Flavors', cursive;
+    color: @TextforColor;
+}
+
+.rm-desktop li a {
+    font-family: 'Flavors', cursive;
+    color: @TextforColor;
+}
+
+.region-footer h4 {
+    font-family: 'Mystery Quest', cursive;
+    color: @TextforColor;
+}
+
+.region-footer a {
+    color: @TextforColor;
+}
+
+.toc h4 {
+    font-family: 'Miltonian Tattoo', cursive;
+    color: @TextforColor;
+}
+
+.toc a {
+    font-family: 'Mystery Quest', cursive;
+    color: @paintItBlack;
+}
+
+.region-sidebar-right h4 {
+    font-family: 'Miltonian Tattoo', cursive;
+    color: @TextforColor;
+}
+
+.region-sidebar-left h4 {
+    font-family: 'Miltonian Tattoo', cursive;
+    color: @TextforColor;
+}
+
+.region-sidebar-left p {
+    font-family: 'Nova Oval', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.region-sidebar-right p {
+    font-family: 'Nova Oval', cursive;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+
+.next a {
+    font-family: 'Mystery Quest', cursive;
+    color: @TextforColor;
+}
+
+.previous a {
+    font-family: 'Mystery Quest', cursive;
+    color: @TextforColor;
+}
+
+.breadcrumb-list {
+    font-family: 'Mystery Quest', cursive;
+    color: @TextforColor;
+}
+
+.region-main p {
+    font-family: 'Nova Oval', cursive;
+}
+
+figure.figure.right {
+    float: right;
+    //margin-left: 8px;
+}
+
+figure.figure.left {
+    float: left;
+    //margin-right: 8px;
+}

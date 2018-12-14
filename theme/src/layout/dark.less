@@ -1,0 +1,265 @@
+/**
+* Layout using vgrid
+*/
+
+/**
+* Variables
+*/
+
+
+/**
+* General layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    //background-color: #0f0;
+    margin-bottom: 12px;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+.site-logo-text {
+    font-size: 42px;
+    line-height: 1;
+    text-shadow: 2px -2px 2px @boxColor;
+    background-color: @bgColorHtml;
+}
+
+.site-logo-text a {
+    color: @bgColorBody;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+.rm-navbar {
+    text-align: center;
+}
+
+.rm-navbar a {
+    font-family: 'Space Mono', monospace;
+}
+
+.rm-navbar ul {
+    list-style: none;
+}
+
+.rm-desktop li {
+    border: 1px solid @boxColor;
+    background-color: @bgColorHtml;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(5);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(14);
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+    display: inline;
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+    display: inline;
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+    display: inline;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+    display: inline;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+.block p {
+    border: 1px solid @boxColor;
+}
+
+.author-byline {
+    #desinax-vgrid.column(@columns);
+    border: 1px solid @boxColor;
+}
+
+.author-byline::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.region-footer {
+    #desinax-vgrid.grid(100%);
+    display: inline;
+}
+
+.footer-column-wrapper {
+    color: @boxColor;
+    border-bottom: 1px solid @boxColor;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+    display: inline;
+}
+
+.footer-column-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    color: @boxColor;
+    text-align: center;
+}
+
+.footer-column p {
+    text-align: center;
+    font-family: 'VT323', monospace;
+}
+
+.wrap-sidebar .block h4 {
+    border-top: 1px solid @boxColor;
+    background-image: linear-gradient(to right,	#2b2b2b,#3c3c3c);
+}
+
+.toc {
+    #desinax-vgrid.column(@columns);
+    border: 1px solid @boxColor;
+    list-style: none;
+}
+
+.toc .selected {
+    background-color: @boxColor;
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+    display: inline;
+}
+
+.breadcrumb-list, .bullet-list {
+    line-height: 1.71428571;
+}
+
+.breadcrumb-list li a, .bullet-list li a {
+    color: inherit;
+}
+
+.breadcrumb-list li, .bullet-list li {
+    display: inline;
+}
+
+.breadcrumb-list ul, .bullet-list ul {
+    list-style-type: none;
+}
+
+.breadcrumb-list li::after, .bullet-list li::after {
+    content: " » ";
+}
+
+.next-previous .next {
+    text-align: right;
+}
+
+.region-sidebar-right p {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+/**
+* Show the vgrid
+*/
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+/**
+* Show the hgrid
+*/
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+/**
+* Responsive Layout 1, 2, 3
+*/
+
+@media screen and (max-width: 905px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}

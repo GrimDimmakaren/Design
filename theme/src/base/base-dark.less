@@ -1,0 +1,83 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorHtml: black;
+@bgColorBody: white;
+@colorBody: #857f89;
+@HeadColor: #53a122;
+@TextColor: #6ac127;
+@linkColor: #f9e155;
+@boxColor: #a90606;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorHtml;
+    border-left: 40px;
+    border-right: 40px;
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    background-color: @bgColorHtml;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+image {
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+h4 {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+h2 {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+a {
+    font-family: 'Share Tech Mono', monospace;
+    color: @linkColor;
+}
+
+p {
+    font-family: 'Share Tech Mono', monospace;
+    color: @TextColor;
+}
+
+li {
+    font-family: 'Space Mono', monospace;
+    color: @HeadColor;
+}
+
+th {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+td {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+legend {
+    font-family: 'VT323', monospace;
+    color: @HeadColor;
+}
+
+figure.figure.right {
+    float: right;
+}
+
+figure.figure.left {
+    float: left;
+}
