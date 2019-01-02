@@ -78,5 +78,10 @@ return [
             "url" => "test",
             "title" => "Testa och lek med möjligheter för att experimentera.",
         ],
+        [
+            "text" => "Blogg",
+            "url" => "blogg",
+            "title" => "Min Blogg",
+        ],
     ],
 ];

@@ -19,3 +19,4 @@ v1.0.0 (2018. 11. 07)
 * Adding vgrid and hgrid for kmom03
 * Adding redovisnings text and setting the theme as default for komo03
 * Adding content for kmom04
+* Adding content for kmom05

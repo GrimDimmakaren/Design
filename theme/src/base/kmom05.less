@@ -1,0 +1,75 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorBody: white;
+@HeaderColor: #d2d2d2;
+@OtherColor: #7e7e7e;
+@FooterColor: #515151;
+@SideColor: #f6f6f6;
+@linkColor: #000000;
+@maxContentWidth: 960px;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorBody;
+    border-left: 20px;
+    border-right: 20px;
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    background-color: @bgColorBody;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+image {
+    max-width: 100%;
+}
+
+figure.figure.right {
+    float: right;
+}
+
+figure.figure.left {
+    float: left;
+}
+
+figure.figure figcaption {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Amita', cursive;
+}
+
+h4 {
+    font-family: 'Quintessential', cursive;
+}
+
+a {
+    font-family: 'Redressed', cursive;
+    color: @linkColor;
+}
+
+p {
+    font-family: 'Patrick Hand', cursive;
+}
+
+&.left,
+&.right {
+    @media screen {
+        @media (max-width: round(@maxContentWidth * 2 / 3)) {
+            &.w50 {
+                margin-left: 0;
+                margin-right: 0;
+                float: none;
+                img {
+                    width: @maxContentWidth * 2 / 3;
+                }
+            }
+        }
+    }
+}
