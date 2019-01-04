@@ -20,3 +20,4 @@ v1.0.0 (2018. 11. 07)
 * Adding redovisnings text and setting the theme as default for komo03
 * Adding content for kmom04
 * Adding content for kmom05
+* Adding part of kmom06 designelement

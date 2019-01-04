@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design Kmom05.
+ * Stylesheet for design designelement Kmom06.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -4315,46 +4315,64 @@ template {
   font-family: 'Font Awesome 5 Brands';
 }
 @font-face {
-  font-family: 'Amita';
+  font-family: 'Bevan';
   font-style: normal;
   font-weight: 400;
-  src: local('Amita Regular'), local('Amita-Regular'), url(https://fonts.gstatic.com/s/amita/v3/HhyaU5si9Om7PTloC_A.ttf) format('truetype');
+  src: local('Bevan Regular'), local('Bevan-Regular'), url(https://fonts.gstatic.com/s/bevan/v9/4iCj6KZ0a9NXjG8dWC4.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Amita';
+  font-family: 'Bevan';
   font-style: normal;
   font-weight: 400;
-  src: local('Amita Regular'), local('Amita-Regular'), url(https://fonts.gstatic.com/s/amita/v3/HhyaU5si9Om7PTloC_A.ttf) format('truetype');
+  src: local('Bevan Regular'), local('Bevan-Regular'), url(https://fonts.gstatic.com/s/bevan/v9/4iCj6KZ0a9NXjG8dWC4.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Quintessential';
+  font-family: 'Black Ops One';
   font-style: normal;
   font-weight: 400;
-  src: local('Quintessential'), local('Quintessential-Regular'), url(https://fonts.gstatic.com/s/quintessential/v6/fdNn9sOGq31Yjnh3qWU14Ddtjb53Qb0.ttf) format('truetype');
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(https://fonts.gstatic.com/s/blackopsone/v9/qWcsB6-ypo7xBdr6Xshe96H3aDvbsg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Amita';
+  font-family: 'Bevan';
   font-style: normal;
   font-weight: 400;
-  src: local('Amita Regular'), local('Amita-Regular'), url(https://fonts.gstatic.com/s/amita/v3/HhyaU5si9Om7PTloC_A.ttf) format('truetype');
+  src: local('Bevan Regular'), local('Bevan-Regular'), url(https://fonts.gstatic.com/s/bevan/v9/4iCj6KZ0a9NXjG8dWC4.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Quintessential';
+  font-family: 'Black Ops One';
   font-style: normal;
   font-weight: 400;
-  src: local('Quintessential'), local('Quintessential-Regular'), url(https://fonts.gstatic.com/s/quintessential/v6/fdNn9sOGq31Yjnh3qWU14Ddtjb53Qb0.ttf) format('truetype');
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(https://fonts.gstatic.com/s/blackopsone/v9/qWcsB6-ypo7xBdr6Xshe96H3aDvbsg.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Redressed';
+  font-family: 'Share';
   font-style: normal;
   font-weight: 400;
-  src: local('Redressed Regular'), local('Redressed-Regular'), url(https://fonts.gstatic.com/s/redressed/v9/x3dickHUbrmJ7wMy9Msxe_oG.ttf) format('truetype');
+  src: local('Share Regular'), local('Share-Regular'), url(https://fonts.gstatic.com/s/share/v8/i7dEIFliZjKNF6VKFr4.ttf) format('truetype');
 }
 @font-face {
-  font-family: 'Patrick Hand';
+  font-family: 'Berkshire Swash';
   font-style: normal;
   font-weight: 400;
-  src: local('Patrick Hand'), local('PatrickHand-Regular'), url(https://fonts.gstatic.com/s/patrickhand/v11/LDI1apSQOAYtSuYWp8ZhfYe8XsLO.ttf) format('truetype');
+  src: local('Berkshire Swash Regular'), local('BerkshireSwash-Regular'), url(https://fonts.gstatic.com/s/berkshireswash/v6/ptRRTi-cavZOGqCvnNJDl5m5XmN_qs42.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Bevan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Bevan Regular'), local('Bevan-Regular'), url(https://fonts.gstatic.com/s/bevan/v9/4iCj6KZ0a9NXjG8dWC4.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Black Ops One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Black Ops One Regular'), local('BlackOpsOne-Regular'), url(https://fonts.gstatic.com/s/blackopsone/v9/qWcsB6-ypo7xBdr6Xshe96H3aDvbsg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Share Regular'), local('Share-Regular'), url(https://fonts.gstatic.com/s/share/v8/i7dEIFliZjKNF6VKFr4.ttf) format('truetype');
 }
 /**
  * Internal self contained modules, save in directory module/.
@@ -4640,13 +4658,11 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: white;
-  border-left: 20px;
-  border-right: 20px;
-}
-body {
-  font: 16px/1.5 "sans-serif";
-  background-color: white;
+  background: url(../../htdocs/img/theme/berg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 h1,
 h2,
@@ -4944,18 +4960,45 @@ figure.figure.left {
 figure.figure figcaption {
   text-align: center;
 }
-h1 {
-  font-family: 'Amita', cursive;
+figure.figure img {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
 }
-h4 {
-  font-family: 'Quintessential', cursive;
-}
-a {
-  font-family: 'Redressed', cursive;
-  color: #000000;
+figcaption p {
+  font-family: 'Black Ops One', cursive;
+  color: black;
 }
 p {
-  font-family: 'Patrick Hand', cursive;
+  padding-left: 10px;
+  font-family: 'Share', cursive;
+  color: darkgreen;
+}
+a {
+  font-family: 'Share', cursive;
+}
+p a {
+  color: darkred;
+}
+h1 {
+  padding-left: 10px;
+  font-family: 'Bevan', cursive;
+  color: black;
+}
+h1 a {
+  color: darkred;
+}
+h2 {
+  font-family: 'Bevan', cursive;
+  color: black;
+}
+h4 {
+  text-align: center;
+  font-family: 'Bevan', cursive;
+}
+li a {
+  color: darkred;
+}
+.meta-header {
+  padding-left: 10px;
 }
 /**
 Figure and figcaption for images and other media using figure/figcaption
@@ -5027,18 +5070,18 @@ Figure and figcaption for images and other media using figure/figcaption
   margin-left: auto;
   max-width: 1100px;
 }
-.wrap-all {
-  background-color: white;
+.inner-wrap-main {
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
 }
 .site-logo-text {
   font-size: 42px;
   line-height: 1;
   text-shadow: 2px -2px 2px #515151;
-  background-color: #d2d2d2;
 }
 .site-logo-text a {
-  color: #000000;
-  font-family: 'Amita', cursive;
+  color: darkred;
+  font-family: 'Berkshire Swash', cursive;
   transition: all 0.2s linear;
 }
 .rm-navbar {
@@ -5051,13 +5094,21 @@ Figure and figcaption for images and other media using figure/figcaption
   list-style: none;
 }
 .rm-desktop li {
-  background-color: #d2d2d2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.rm-desktop li a {
+  background-color: rgba(255, 255, 255, 0.5);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+  font-family: 'Black Ops One', cursive;
 }
 .inner-wrap-header {
   margin-right: auto;
   margin-left: auto;
   max-width: 100%;
-  background-color: #d2d2d2;
+}
+.outer-wrap-header {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
 }
 .region-header-col-1,
 .region-header-col-3 {
@@ -5075,11 +5126,12 @@ Figure and figcaption for images and other media using figure/figcaption
   margin-right: 0.52083333%;
 }
 .region-flash {
+  display: inline;
   float: left;
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-  display: inline;
+  display: none;
 }
 .region-main {
   float: left;
@@ -5113,9 +5165,13 @@ Figure and figcaption for images and other media using figure/figcaption
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   display: inline;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .region-sidebar-right {
   margin-left: 4.6875%;
+  margin-left: 6%;
   display: inline;
 }
 .region-sidebar-left.has-sidebar-right,
@@ -5132,6 +5188,8 @@ Figure and figcaption for images and other media using figure/figcaption
   width: 98.95833333%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
 }
 .author-byline p {
   padding-right: 20px;
@@ -5152,12 +5210,6 @@ Figure and figcaption for images and other media using figure/figcaption
   max-width: 100%;
   display: inline;
 }
-.outer-wrap-footer {
-  background-color: #515151;
-}
-.inner-wrap-footer {
-  background-color: #515151;
-}
 .footer-column-wrapper {
   color: black;
   border-bottom: 1px solid black;
@@ -5168,6 +5220,14 @@ Figure and figcaption for images and other media using figure/figcaption
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   display: inline;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+}
+.inner-wrap-footer {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+}
+.outer-wrap-footer {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .footer-column-wrapper::after {
   content: "";
@@ -5185,12 +5245,13 @@ Figure and figcaption for images and other media using figure/figcaption
 .footer-column p {
   text-align: center;
 }
-.wrap-sidebar .block h4 {
-  border-top: 1px solid #7e7e7e;
-  background-color: #d2d2d2;
+.footer-column a {
+  color: darkred;
 }
-.wrap-sidebar {
-  background-color: #f6f6f6;
+.wrap-sidebar .block h4 {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+  font-family: 'Bevan', cursive;
 }
 .toc {
   display: inline;
@@ -5201,7 +5262,15 @@ Figure and figcaption for images and other media using figure/figcaption
   list-style: none;
 }
 .toc .selected a {
-  background-color: #d2d2d2;
+  background-image: linear-gradient(to right, #a6a6a6, #737373 11%, #a6a6a6 35%, #737373 65%);
+  box-shadow: inset 0 0 75px #a6a6a6, inset 0 0 20px #333333, inset 0 0 30px #191919;
+  color: rgba(0, 0, 0, 0.5);
+}
+.block a {
+  color: darkred;
+}
+.readmore a {
+  color: darkred;
 }
 .region-breadcrumb {
   float: left;
@@ -5209,6 +5278,11 @@ Figure and figcaption for images and other media using figure/figcaption
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
   display: inline;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+}
+.outer-wrap-breadcrumb {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 .breadcrumb-list,
 .bullet-list {
@@ -5216,7 +5290,7 @@ Figure and figcaption for images and other media using figure/figcaption
 }
 .breadcrumb-list li a,
 .bullet-list li a {
-  color: inherit;
+  color: darkred;
 }
 .breadcrumb-list li,
 .bullet-list li {
@@ -5233,11 +5307,15 @@ Figure and figcaption for images and other media using figure/figcaption
 .next-previous .next {
   text-align: right;
 }
+.next-previous a {
+  color: darkred;
+}
 .region-sidebar-right p {
   text-align: center;
 }
-h4 {
-  text-align: center;
+.stylechooser {
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
 }
 /**
 * Show the vgrid

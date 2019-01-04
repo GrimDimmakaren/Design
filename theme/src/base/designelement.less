@@ -1,0 +1,95 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorBody: white;
+@HeaderColor: #d2d2d2;
+@OtherColor: #7e7e7e;
+@FooterColor: #515151;
+@SideColor: #f6f6f6;
+@linkColor: darkred;
+
+html {
+    overflow-y: scroll;
+    background: url(../../htdocs/img/theme/berg.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+// Activate the grid base font
+//body {
+//    #desinax-hgrid.font(@fontSizeBody);
+//    background-color: @bgColorBody;
+//}
+
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+image {
+    max-width: 100%;
+}
+
+figure.figure.right {
+    float: right;
+}
+
+figure.figure.left {
+    float: left;
+}
+
+figure.figure figcaption {
+    text-align: center;
+}
+
+figure.figure img {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4), 0 12px 40px 0 rgba(0, 0, 0, 0.32);
+}
+
+figcaption p {
+    font-family: 'Black Ops One', cursive;
+    color: black;
+}
+
+p {
+    padding-left: 10px;
+    font-family: 'Share', cursive;
+    color: darkgreen;
+}
+
+a {
+    font-family: 'Share', cursive;
+}
+
+p a {
+    color: @linkColor;
+}
+
+h1 {
+    padding-left: 10px;
+    font-family: 'Bevan', cursive;
+    color: black;
+}
+
+h1 a {
+    color: @linkColor;
+}
+
+h2 {
+    font-family: 'Bevan', cursive;
+    color: black;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Bevan', cursive;
+}
+
+li a {
+    color: @linkColor;
+}
+
+.meta-header {
+    padding-left: 10px;
+}
