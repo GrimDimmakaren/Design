@@ -1,0 +1,364 @@
+/**
+* Layout using vgrid
+*/
+
+/**
+* Variables
+*/
+
+
+/**
+* General layout
+*/
+
+.row {
+    #desinax-vgrid.row();
+    //background-color: #0f0;
+    margin-bottom: 12px;
+}
+
+.inner-wrap {
+    #desinax-vgrid.grid(1100px);
+}
+
+.wrap-all {
+    background-color: @bgColorBody;
+}
+
+.site-logo-text {
+    font-size: 42px;
+    line-height: 1;
+    text-shadow: 2px -2px 2px @FooterColor;
+    background-color: @HeaderColor;
+}
+
+.site-logo-text a {
+    color: @linkColor;
+    font-family: 'Srisakdi', cursive;
+    transition: all .2s linear;
+}
+
+.rm-navbar {
+    text-align: center;
+}
+
+.rm-navbar a {
+    font-family: 'Acme', sans-serif;
+}
+
+.rm-navbar ul {
+    list-style: none;
+}
+
+.rm-desktop li {
+    display: inline-block;
+    background: @HeaderColor;
+    color: black;
+    text-transform: uppercase;
+    //padding: 20px 30px;
+    padding: 2px 2px;
+    border-radius: 20px;
+    box-shadow: 0px 12px 4px -4px rgba(192,192,192,0.3);
+    cursor: pointer;
+    transition: all ease-in-out 150ms;
+}
+
+.rm-desktop li:hover {
+    //box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    box-shadow: 0px 12px 4px -4px rgba(255, 0, 0, 0.8);
+    border-radius: 20px;
+    transform: translate(0px, -4px) scale(1.2);
+}
+
+.rm-desktop li a {
+    border-radius: 20px;
+}
+
+.inner-wrap-header {
+    #desinax-vgrid.grid(100%);
+    background-color: @HeaderColor;
+}
+
+.region-header-col-1,
+.region-header-col-3 {
+    #desinax-vgrid.column(4);
+}
+
+.region-header-col-2 {
+    #desinax-vgrid.column(18);
+}
+
+@keyframes spinner {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(-360deg);
+  }
+}
+
+.region-flash {
+    #desinax-vgrid.column(@columns);
+    display: inline;
+    //transform-origin: 200px 0 0;
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-duration: 6s;
+    //transform-style: preserve-3d;
+}
+
+.region-flash img {
+    border-radius: 20px;
+}
+
+.outer-wrap-flash {
+    background-image: linear-gradient(to right,white,black);
+}
+
+.inner-wrap-flash {
+    max-height: 150px;
+}
+
+.region-main {
+    #desinax-vgrid.column(@columns * 3 / 4);
+    #desinax-vgrid.push(3);
+    display: inline;
+
+    &.has-sidebar {
+        #desinax-vgrid.push(0);
+    }
+
+    &.has-sidebar-right {
+        #desinax-vgrid.column(@columns * 3 / 4 - 1);
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        #desinax-vgrid.column(@columns - 10);
+    }
+}
+
+.region-sidebar-left,
+.region-sidebar-right {
+    #desinax-vgrid.column(@columns * 1 / 4);
+    display: inline;
+}
+
+.region-sidebar-right {
+    #desinax-vgrid.push(1);
+    display: inline;
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    #desinax-vgrid.column(@columns * 1 / 4 - 1);
+}
+
+.wrap-sidebar {
+    background-color: black;
+}
+
+.wrap-sidebar .block h4 {
+    border-top: 1px solid @OtherColor;
+    border-radius: 20px;
+    background-image: linear-gradient(to right,white,#202020);
+}
+
+.toc {
+    #desinax-vgrid.column(@columns);
+    list-style: none;
+}
+
+.toc .selected {
+    background-image: linear-gradient(to right,#A9A9A9,red,black);
+    border-radius: 20px;
+
+}
+
+.author-byline {
+    #desinax-vgrid.column(@columns);
+}
+
+.author-byline p {
+    padding-right: 20px;
+    color: @textColor;
+}
+
+.author-byline::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.region-footer {
+    #desinax-vgrid.grid(100%);
+    display: inline;
+}
+
+.outer-wrap-footer {
+    background-image: linear-gradient(to right,white,black);
+}
+
+.footer-column-wrapper {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+.footer-column {
+    #desinax-vgrid.column(@columns / 3);
+    display: inline;
+}
+
+.footer-column-wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.site-footer {
+    #desinax-vgrid.column(@columns);
+    text-align: center;
+}
+
+.footer-column p {
+    text-align: center;
+}
+
+.region-breadcrumb {
+    #desinax-vgrid.column(@columns);
+    display: inline;
+}
+
+.breadcrumb-list, .bullet-list {
+    line-height: 1.71428571;
+}
+
+.breadcrumb-list li a, .bullet-list li a {
+    //color: inherit;
+    color: @textColor;
+}
+
+.breadcrumb-list li, .bullet-list li {
+    display: inline;
+    color: @textColor;
+}
+
+.breadcrumb-list ul, .bullet-list ul {
+    list-style-type: none;
+}
+
+.breadcrumb-list li::after, .bullet-list li::after {
+    content: " » ";
+}
+
+.next-previous .next {
+    text-align: right;
+    color: @textColor;
+}
+
+.next-previous a {
+    color: @textColor;
+}
+
+.previous {
+    color: @textColor;
+}
+
+.region-sidebar-right p {
+    text-align: center;
+}
+
+.stylechooser {
+    background-color: white;
+}
+
+.meta-header {
+    color: @textColor;
+}
+
+.blog-list-item h1 a {
+    color: @textColor;
+}
+
+/**
+* Show the vgrid
+*/
+.vgrid .inner-wrap {
+    @gridImage: "../img/grid_24x30x10-nomargin.png";
+    #desinax-vgrid.showGrid(@gridImage, 1100px);
+
+    &.inner-wrap-header,
+    &.inner-wrap-footer {
+        #desinax-vgrid.showGrid(@gridImage);
+    }
+}
+
+/**
+* Show the hgrid
+*/
+.hgrid .inner-wrap {
+    @gridImage: "../img/magic-number-@{magicNumber}.png";
+    #desinax-hgrid.showGrid(@gridImage);
+}
+
+/**
+* Responsive Layout 1, 2, 3
+*/
+
+@media screen and (max-width: 905px) {
+    .region-main {
+        #desinax-vgrid.column(@columns);
+
+        &.has-sidebar-left.has-sidebar-right {
+            #desinax-vgrid.column(@columns);
+        }
+    }
+
+    .region-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-left.has-sidebar-right,
+    .region-sidebar-right.has-sidebar-left {
+        #desinax-vgrid.column(@columns);
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .region-main.has-sidebar-right {
+        #desinax-vgrid.column(@columns);
+    }
+
+    .region-sidebar-right {
+        #desinax-vgrid.column(@columns);
+        #desinax-vgrid.push(0);
+    }
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+//figure.figure {
+//    @maxContentWidth: 960px;
+//    #desinax-figure.figure(@maxContentWidth);
+//}

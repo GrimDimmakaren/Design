@@ -1,0 +1,134 @@
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+@bgColorBody: black;
+@HeaderColor: white;
+@OtherColor: #7e7e7e;
+@FooterColor: white;
+@SideColor: #f6f6f6;
+@linkColor: red;
+@textColor: white;
+//@maxContentWidth: 960px;
+
+html {
+    overflow-y: scroll;
+    background-color: @bgColorBody;
+    border-left: 20px;
+    border-right: 20px;
+}
+
+// Activate the grid base font
+body {
+    #desinax-hgrid.font(@fontSizeBody);
+    background-color: @bgColorBody;
+}
+
+// Activate grid and affect all typographic elements
+#desinax-hgrid.activateDefaultTypography();
+
+image {
+    max-width: 100%;
+}
+
+figure.figure img {
+    border-radius: 20px;
+    box-shadow: 6px 6px 0px 3px #202020;
+}
+
+figure.figure.right {
+    float: right;
+}
+
+figure.figure.left {
+    float: left;
+}
+
+figure.figure figcaption {
+    text-align: center;
+    color: @linkColor;
+}
+
+h1 {
+    font-family: 'Acme', sans-serif;
+    color: @textColor;
+}
+
+h4 {
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+}
+
+a {
+    font-family: 'Acme', sans-serif;
+    color: @linkColor;
+}
+
+p {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.article p {
+    color: @textColor;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.toc a {
+    color: black;
+}
+
+.region-main p {
+    color: @textColor;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.article ul {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+.article h2 {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+.article h4 {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+ol {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+.block p {
+    padding-left: 10px;
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+.readmore a {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+.toc li a {
+    color: @textColor;
+    font-family: 'Acme', sans-serif;
+}
+
+//&.left,
+//&.right {
+//    @media screen {
+//        @media (max-width: round(@maxContentWidth * 2 / 3)) {
+//            &.w50 {
+//                margin-left: 0;
+//                margin-right: 0;
+//                float: none;
+//                img {
+//                    width: @maxContentWidth * 2 / 3;
+//                }
+//            }
+//        }
+//    }
+//}
